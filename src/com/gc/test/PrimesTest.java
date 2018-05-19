@@ -23,5 +23,12 @@ class PrimesTest {
 		int actual = obj.locatePrimeAt(2);
 		assertEquals(expected, actual);
 	}
-	
+
+	@Test
+	void test3() {
+		Primes obj = new Primes();
+		int expected = 5;
+		int actual = obj.locatePrimeAt(3);
+		assertEquals(expected, actual);
+	}
 }

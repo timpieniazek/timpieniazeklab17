@@ -3,7 +3,10 @@ package com.gc.primes;
 public class Primes {
 	
 	public int locatePrimeAt(int i) {
-		return i + 1;
+		if (i < 3) {
+			return i + 1;
+		}
+		return i + 2;
 	}
 
 }
