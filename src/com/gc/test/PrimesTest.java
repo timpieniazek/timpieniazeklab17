@@ -9,6 +9,14 @@ import com.gc.primes.Primes;
 class PrimesTest {
 
 	@Test
+	void testA() {
+		Primes obj = new Primes();
+		boolean expected = true;
+		boolean actual = obj.isPrime(3);
+		assertEquals(expected, actual);
+	}
+	
+	@Test
 	void test1() {
 		Primes obj = new Primes();
 		int expected = 2;
@@ -53,6 +61,22 @@ class PrimesTest {
 		Primes obj = new Primes();
 		int expected = 13;
 		int actual = obj.locatePrimeAt(6);
+		assertEquals(expected, actual);
+	}
+
+	@Test
+	void test7() {
+		Primes obj = new Primes();
+		int expected = 17;
+		int actual = obj.locatePrimeAt(7);
+		assertEquals(expected, actual);
+	}
+	
+	@Test
+	void test8() {
+		Primes obj = new Primes();
+		int expected = 19;
+		int actual = obj.locatePrimeAt(8);
 		assertEquals(expected, actual);
 	}
 }
