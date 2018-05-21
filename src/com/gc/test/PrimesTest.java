@@ -9,14 +9,6 @@ import com.gc.primes.Primes;
 class PrimesTest {
 
 	@Test
-	void testA() {
-		Primes obj = new Primes();
-		boolean expected = true;
-		boolean actual = obj.isPrime(3);
-		assertEquals(expected, actual);
-	}
-	
-	@Test
 	void test1() {
 		Primes obj = new Primes();
 		int expected = 2;
